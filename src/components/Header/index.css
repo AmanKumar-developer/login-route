@@ -1,0 +1,36 @@
+/* Write your CSS code here */
+.nav-header {
+  display: flex;
+  justify-content: center;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1140px;
+}
+.website-logo-image {
+  width: 230px;
+}
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex: 1;
+  list-style-type: none;
+}
+.nav-links {
+  text-decoration: none;
+  margin: 10px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+.header-button {
+  color: #ffffff;
+  background-color: #0b69ff;
+  font-family: 'Roboto';
+  border: none;
+  border-radius: 3px;
+}
