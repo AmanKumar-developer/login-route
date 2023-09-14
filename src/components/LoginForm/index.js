@@ -53,8 +53,6 @@ class LoginForm extends Component {
     }
     const response = await fetch(url, options)
     const data = response.json()
-    console.log(data)
-    console.log(response)
     if (response.ok === true) {
       this.onLoginSuccess()
     } else {
@@ -81,7 +79,8 @@ class LoginForm extends Component {
     )
   }
 
-  render() {
+  render() { 
+    const {showSubmitError,errorMsg} = this.state
     return (
       <div className="login-home-container">
         <img
@@ -106,7 +105,8 @@ class LoginForm extends Component {
 
           <button type="submit" className="submit-button">
             Login
-          </button>
+          </button> 
+{showSubmitError && <p className="error-message">*{errorMsg}</p>
         </form>
       </div>
     )
